@@ -1,11 +1,11 @@
 import { useState } from 'react'
+import { Widget } from './components/Widget'
 
 
-function App() {
+export function App() {
 
   return (
-    <button>Fael</button>
+    <Widget />
   )
 }
 
-export default App
