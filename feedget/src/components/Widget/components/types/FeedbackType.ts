@@ -1,4 +1,10 @@
-export type FeedbackObjectType = { 
+import { feedbackTypes } from "../data/feedback"
+
+
+export type FeedbackKeysType = keyof typeof feedbackTypes
+
+
+export interface FeedbackButtonProps { 
     value: { 
         title: string, 
         icon: {
@@ -9,3 +15,10 @@ export type FeedbackObjectType = {
 
     onChangeFeedback: () => void,
 }
+
+export interface FeedbackFormProps { 
+    feedbackType: FeedbackKeysType,
+    onFeedbackRestart: () => void,
+    onFeedbackSent: (feedbackSent: boolean) => void,
+}
+

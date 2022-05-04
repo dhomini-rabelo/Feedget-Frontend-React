@@ -3,7 +3,7 @@ import thoughtIconUrl from '../../assets/Thought.svg'
 import bugIconUrl from '../../assets/Bug.svg'
 
 
-export const feedbackButtonTypes = {
+export const feedbackTypes = {
     
     BUG : {
         title: 'Problema',
