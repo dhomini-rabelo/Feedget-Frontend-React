@@ -1,8 +1,8 @@
 import { FeedbackKeysType } from "./types/FeedbackType";
 import { useState } from "react";
-import { FeedbackForm } from "./steps/FeedbackForm";
 import { FeedbackFormSuccess } from "./steps/FeedbackFormSuccess";
 import { SelectFeedback } from "./steps/SelectFeedback";
+import { FeedbackForm } from "./steps/FeedbackForm";
 
 
 export function WidgetForm () {
