@@ -1,6 +1,6 @@
 import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
-// import { api } from "../../../../service/api";
+import { api } from "../../../../service/api";
 import { Loading } from "../../../Loading";
 import { CloseButton } from "../CloseButton";
 import { feedbackTypes } from "../data/feedback";
@@ -20,11 +20,11 @@ export function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent 
         setIsSending(true)
 
         
-        // await api.post('/feedbacks', {
-        //     type: feedbackType,
-        //     comment,
-        //     screenshot,
-        // })
+        await api.post('/feedbacks', {
+            type: feedbackType,
+            comment,
+            screenshot,
+        })
         
         
         setIsSending(false)
