@@ -9,7 +9,7 @@ import { ScreenshotButton } from "./components/ScreenshotButton";
 import { screenshotType } from "./types";
 
 
-export function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent }: FeedbackFormProps) {
+export default function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent }: FeedbackFormProps) {
     const feedback = feedbackTypes[feedbackType]
     const [screenshot, setScreenshot] = useState<screenshotType>(null)
     const [comment, setComment] = useState<string>('')
