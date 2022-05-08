@@ -1,4 +1,4 @@
-<h1>Feedget - Frontend com React</h1>
+<h1>Feedget - Frontend com React ( README em construção )</h1>
 
 <p>Projeto da nlw da rocketseat</p>
 
