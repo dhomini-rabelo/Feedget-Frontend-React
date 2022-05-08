@@ -20,7 +20,7 @@ export function WidgetForm () {
                         {!selectedFeedback ? (
                                 <SelectFeedback setSelectedFeedback={setSelectedFeedback} />
                             ) : (
-                                <FeedbackForm feedbackType={selectedFeedback} onFeedbackRestart={handleRestartFeedback} onFeedbackSent={setFeedbackSent} />
+                                <FeedbackForm feedbackType={selectedFeedback} onFeedbackRestart={handleRestartFeedback} onFeedbackSent={() => setFeedbackSent(true)} />
                         )}
                     </>
                 ) : (

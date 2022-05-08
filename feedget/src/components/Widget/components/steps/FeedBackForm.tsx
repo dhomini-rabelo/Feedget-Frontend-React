@@ -28,7 +28,7 @@ export function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent 
         
         
         setIsSending(false)
-        onFeedbackSent(true)
+        onFeedbackSent()
     }
 
     return (

@@ -19,6 +19,6 @@ export interface FeedbackButtonProps {
 export interface FeedbackFormProps { 
     feedbackType: FeedbackKeysType,
     onFeedbackRestart: () => void,
-    onFeedbackSent: (feedbackSent: boolean) => void,
+    onFeedbackSent: () => void,
 }
 
