@@ -1,6 +1,6 @@
 import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
-import { api } from "../../../../service/api";
+// import { api } from "../../../../service/api";
 import { Loading } from "../../../Loading";
 import { CloseButton } from "../CloseButton";
 import { feedbackTypes } from "../data/feedback";
@@ -9,7 +9,7 @@ import { ScreenshotButton } from "./components/ScreenshotButton";
 import { screenshotType } from "./types";
 
 
-export default function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent }: FeedbackFormProps) {
+export function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedbackSent }: FeedbackFormProps) {
     const feedback = feedbackTypes[feedbackType]
     const [screenshot, setScreenshot] = useState<screenshotType>(null)
     const [comment, setComment] = useState<string>('')
@@ -20,11 +20,11 @@ export default function FeedbackForm ({ feedbackType, onFeedbackRestart, onFeedb
         setIsSending(true)
 
         
-        await api.post('/feedbacks', {
-            type: feedbackType,
-            comment,
-            screenshot,
-        })
+        // await api.post('/feedbacks', {
+        //     type: feedbackType,
+        //     comment,
+        //     screenshot,
+        // })
         
         
         setIsSending(false)
